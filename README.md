@@ -1,81 +1,62 @@
 # DNA Sequence Analysis Toolkit 🧬
-
-Ce projet est une application Python développée dans le cadre du module "Système et Programmation de Scripts" du Master 1 Bio-Informatique (USTHB). Il fournit une boîte à outils complète pour l'analyse de séquences d'ADN, accessible via une interface graphique (GUI) ou une interface en ligne de commande (CLI).
-
-## ✨ Captures d'écran de l'Interface Graphique
-
-L'application offre une expérience utilisateur intuitive grâce à son interface construite avec Tkinter.
-
-**Menu Principal :**
-![Menu Principal de l'application](./screenshots/01.png)
-
-**Fenêtre d'Analyse :**
-![Fenêtre d'analyse](./screenshots/02.png)
-
-## 🚀 Fonctionnalités
-
-L'application permet de réaliser un large éventail d'opérations sur des séquences d'ADN, qu'elles soient générées aléatoirement ou lues depuis un fichier.
-
-- **Gestion de Séquence :**
-  - Générer une chaîne ADN aléatoire d'une longueur donnée.
-  - Charger une séquence ADN depuis un fichier (`.fasta`, `.txt`, etc.).
-  - Vérifier la validité d'une séquence (contient uniquement A, C, G, T).
-
-- **Analyses Fondamentales :**
-  - **Fréquence des bases :** Calculer le nombre d'occurrences de chaque nucléotide (A, C, G, T).
-  - **Taux de GC :** Calculer le pourcentage de bases G et C dans la séquence.
-  - **Transcription :** Convertir une séquence d'ADN en sa correspondante d'ARN.
-  - **Traduction :** Traduire une séquence d'ARN en sa séquence de protéines (acides aminés).
-  - **Complément Inverse :** Générer la séquence complémentaire inverse.
-  - **Fréquence des codons :** Calculer la fréquence de chaque codon de trois nucléotides.
-
-- **Fonctionnalités Avancées :**
-  - **Mutation Ponctuelle :** Introduire un nombre spécifié de mutations par substitution.
-  - **Recherche de Motif :** Trouver toutes les occurrences d'un sous-motif dans la séquence.
-  - **Séquence Consensus :** À partir d'un ensemble de séquences, générer la matrice de profil et la chaîne ADN consensus.
-
-- **Utilitaire :**
-  - Sauvegarder l'historique des analyses et des résultats dans un fichier texte.
-
-## 🔧 Comment l'utiliser
-
-1.  **Clonez ce dépôt :**
+This project is a Python application developed as part of the "Systems and Script Programming" module of the Master 1 Bioinformatics (USTHB). It provides a comprehensive toolkit for DNA sequence analysis, accessible via a graphical interface (GUI) or a command-line interface (CLI).
+## ✨ Graphical Interface Screenshots
+The application offers an intuitive user experience through its interface built with Tkinter.
+**Main Menu:**
+![Application Main Menu](./screenshots/01.png)
+**Analysis Window:**
+![Analysis window](./screenshots/02.png)
+## 🚀 Features
+The application allows performing a wide range of operations on DNA sequences, whether randomly generated or read from a file.
+- **Sequence Management:**
+  - Generate a random DNA string of a given length.
+  - Load a DNA sequence from a file (`.fasta`, `.txt`, etc.).
+  - Verify the validity of a sequence (contains only A, C, G, T).
+- **Fundamental Analyses:**
+  - **Base frequency:** Calculate the number of occurrences of each nucleotide (A, C, G, T).
+  - **GC content:** Calculate the percentage of G and C bases in the sequence.
+  - **Transcription:** Convert a DNA sequence to its corresponding RNA.
+  - **Translation:** Translate an RNA sequence to its protein sequence (amino acids).
+  - **Reverse Complement:** Generate the reverse complementary sequence.
+  - **Codon frequency:** Calculate the frequency of each three-nucleotide codon.
+- **Advanced Features:**
+  - **Point Mutation:** Introduce a specified number of mutations by substitution.
+  - **Motif Search:** Find all occurrences of a sub-motif in the sequence.
+  - **Consensus Sequence:** From a set of sequences, generate the profile matrix and consensus DNA string.
+- **Utility:**
+  - Save analysis history and results to a text file.
+## 🔧 How to Use
+1.  **Clone this repository:**
     ```bash
-    git clone https://github.com/VOTRE_NOM_UTILISATEUR/DNA-Sequence-Analyzer.git
+    git clone https://github.com/YOUR_USERNAME/DNA-Sequence-Analyzer.git
     cd DNA-Sequence-Analyzer
     ```
-
-2.  **(Optionnel mais recommandé) Créez un environnement virtuel :**
+2.  **(Optional but recommended) Create a virtual environment:**
     ```bash
     python -m venv env
-    # Sur Windows
+    # On Windows
     .\env\Scripts\activate
-    # Sur macOS/Linux
+    # On macOS/Linux
     source env/bin/activate
     ```
-
-3.  **Installez les dépendances nécessaires :**
+3.  **Install required dependencies:**
     ```bash
     pip install -r requirements.txt
     ```
-
-4.  **Lancez l'application de votre choix :**
-
-    - **Pour l'interface graphique (GUI) :**
+4.  **Launch the application of your choice:**
+    - **For the graphical interface (GUI):**
       ```bash
       python App.py
       ```
-    - **Pour l'interface en ligne de commande (CLI) :**
+    - **For the command-line interface (CLI):**
       ```bash
       python Menu.py
       ```
-
-## 📂 Structure du Projet
-
-Le code est organisé de manière modulaire pour une meilleure lisibilité et maintenance :
-- `App.py`: Point d'entrée de l'application graphique (Tkinter).
-- `Menu.py`: Point d'entrée de l'application en ligne de commande.
-- `ADN_*.py`, `Count_*.py`, etc. : Modules contenant chacun une fonction bio-informatique spécifique.
-- `/assets` : Contient les images utilisées par l'interface graphique.
-- `/sample_data` : Contient des fichiers d'exemples de séquences.
-- `enonce_projet.pdf` : Le document original décrivant le projet.
+## 📂 Project Structure
+The code is organized modularly for better readability and maintenance:
+- `App.py`: Entry point for the graphical application (Tkinter).
+- `Menu.py`: Entry point for the command-line application.
+- `ADN_*.py`, `Count_*.py`, etc.: Modules each containing a specific bioinformatics function.
+- `/assets`: Contains images used by the graphical interface.
+- `/sample_data`: Contains example sequence files.
+- `enonce_projet.pdf`: The original document describing the project.
